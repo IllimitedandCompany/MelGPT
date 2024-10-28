@@ -5,7 +5,7 @@ MelGPT is a virtual assistant, you can ask anything, alike ChatGPT.. But its you
 
 ```bash
 git clone https://github.com/IllimitedandCompany/MelGPT.git
-cd nodejs-chatbot
+cd MelGPT
 npm install
 node server.js
 
