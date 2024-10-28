@@ -1,5 +1,5 @@
-# nodejs-chatbot
-Nojde.js chatbot app using api.ai
+# MelGPT
+MelGPT is a virtual assistant, you can ask anything, alike ChatGPT.. But its you're private virtual assistant.
 
 ## First run
 
