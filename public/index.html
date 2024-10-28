@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mel</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="bubbles.css">
+</head>
+<body>
+<div class="container">
+    <div id="heading_area">
+        <h1>Mel, The Virtual Assistant</h1>
+    </div>
+    <ul id="msg_area">
+        
+    </ul>
+    <input type="text" id="msg" autocomplete="off" placeholder="Write here">
+</div>
+<div id="loading-spinner" class="spinner" style="display: none;">
+    <!-- Basic CSS spinner or loading text -->
+    <div class="loader"></div>
+    <!-- Alternatively, you can use <p>Loading...</p> if no custom spinner is desired -->
+</div>
+<script
+        src="https://code.jquery.com/jquery-3.2.1.min.js"
+        integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.0.3/socket.io.js"></script>
+<script src="app.js"></script>
+<button onclick="downloadFile()">Download File</button>
+<script>
+  function downloadFile(link) {
+    const url = link; // Replace with your file URL
+    const link = document.createElement('a');
+    link.href = url;
+    link.download = 'MelPhoto.jpg'; // Specify the download filename
+    link.click();
+  }
+</script>
+
+</body>
+</html>
